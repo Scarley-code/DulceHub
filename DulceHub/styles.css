@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff5f7, #ffe3ec);
+    color: #222;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 25px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dark-mode {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: #f1f1f1;
+}
+
+.dark-mode .card {
+    background: #1e1e1e;
+    color: #f1f1f1;
+}
+
+.dark-mode .header {
+    background: rgba(18, 18, 18, 0.7);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+button {
+    padding: 10px 14px;
+    cursor: pointer;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #ff6b9a;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ff3d7f;
+    transform: scale(1.05);
+}
+
+.container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card button {
+    margin-top: auto;
+}
+
+.card h3 {
+    min-height: 50px;
+}
+
+ul {
+    text-align: left;
+}
+
+.tag {
+    font-size: 13px;
+    color: #ff4d7d;
+    margin-top: 8px;
+}
+
+#result {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    align-items: stretch;
+}
+
+.intro {
+    margin: 15px 0;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.highlights {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.highlights div {
+    background: rgba(255,255,255,0.6);
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 14px;
+}
